@@ -1,0 +1,144 @@
+h1 {
+	background-color: #2a2e36;
+	color: #c6d4df;
+	padding: 20px;
+	text-align: center;
+	border-bottom: 4px #c6d4df solid;
+	margin-bottom: 10px;
+	font-family: "Motiva Sans", Sans-serif;
+}
+.container {
+	border-style: none !important; 
+}
+
+#player1Name {
+	margin-top: 120px;
+}
+#player2Name {
+	margin-top: 60px;
+} 
+#startGame {
+	margin-left: 170px;
+}
+table {
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
+	height: 500px;
+}
+#game {
+	display: none;
+}
+
+table td {
+	width: 50px;
+	height: 50px;
+	border: 1px solid slategray;
+}
+
+.inaccessibleCell {
+	background-color: rgb(48, 48, 49);
+}
+.emptyCell {
+	background-color: rgb(224, 224, 228);
+}
+.player1 {
+	background-image: url("pics/player1.png");
+	background-size: 100% 100%;
+}
+.player2 {
+	background-image: url("pics/player2.png");
+	background-size: 100% 100%;
+}
+
+.club {
+	background-image: url("pics/club-removebg.png");
+	background-size: 100% 100%;
+}
+
+.dagger {
+	background-image: url("pics/dagger-removebg.png");
+	background-size: 100% 100%;
+}
+.axe {
+	background-image: url("pics/axe-removebg.png");
+	background-size: 100% 100%;	
+}
+.hammer {
+	background-image: url("pics/hammer-removebg.png");
+	background-size: 100% 100%;
+}
+.sword {
+	background-image: url("pics/sword-removebg.png");
+	background-size: 100% 100%;
+
+}
+#game {
+	border: 1px solid slategray;
+}
+.availableMove {
+	background-color: darkred;
+	opacity: 0.5;
+}
+.availableMove:hover {
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.highLight {
+	background-color: rgb(196, 82, 82);
+	opacity: 0.8;
+	border-radius: 10%;
+}
+
+.btn {
+	/* align-items: center; */
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 30px;
+}
+img {
+	margin-left: 70px;
+}
+#showNamePlayer1 {
+	/* font-style: oblique; */
+	font-weight: bold;
+	margin-left: 80px;
+	text-shadow: 1px 1px rgb(209, 217, 224);
+	color: #2a2e36;
+}
+#showNamePlayer2 {
+	/* font-style: oblique; */
+	font-weight: bold;
+	margin-left: 80px;
+	text-shadow: 1px 1px rgb(209, 217, 224);
+	color: #2a2e36;
+}
+#currentWeaponP1,#currentWeaponP2 {
+	margin-left: 40px;
+	font-weight: bold;
+	font-size: 12px;
+	font-style: oblique;
+	color: #2a2e36;
+}
+.progress-bar {
+	padding: 6px 0px; /* 6px up and down, 0px left and right
+	/* margin-top: 5px; */
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+	/* height: 18px; */
+	background-color: #f49542;  
+	border-radius: 4px; 
+	border: 1px solid slategray;
+  	transition: 0.4s linear;  
+	transition-property: width, background-color;
+	width: 100%;    
+}
+
+#restartGame {
+	margin-left: 200px;
+	margin-bottom: 20px;
+	background-color: #f49542; 
+	border-radius: 4px; 
+	border: 1px solid slategray; 
+	box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--page setup-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Jeu de plateau</title>
+<!--  bootstrap and css setup -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  	<header>
+  		<h1 class="welcomeMessage">Bienvenue à notre jeu de plateau</h1>
+    </header>
+    
+    <div class="container" id="beforeGameStarts">
+      <div class="col-md-6 offset-md-3">
+        <input class="form-control form-control-lg" id="player1Name" type="text" placeholder="Nom du joueur 1">
+        <input class="form-control form-control-lg" id="player2Name" type="text" placeholder="Nom du joueur 2">
+        <button type="button" class="btn btn-secondary btn-lg" id="startGame">Commencer le jeu</button>
+      </div>
+    </div>
+
+    <div class="container" id="game">
+      <div class="row">
+        <div class="col-lg-3 col-sm-6">
+          <img src="pics/player1.png" alt="" width="100" height="100" id="img-player1"> 
+          <p id="showNamePlayer1">Player 1</p>
+          <p id="currentWeaponP1"></p>
+            <div class="showPlayer1">
+              <button type="button" class="btn btn-secondary btn-sm" id="player1Att">Attaquer</button>
+              <button type="button" class="btn btn-warning btn-sm" id="player1Def">Se défendre</button>   
+            </div>
+            <div class="progress">
+                <div class="progress-bar" id="pb-player1" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100</div>
+            </div>
+        </div>  
+        <div class="col-lg-6 col-sm-12">
+          <div>
+          <table>
+          </table>
+          </div>
+          <button value="Refresh Page" id="restartGame" onClick="location.href=location.href">Recommencer le jeu</button>
+        </div>
+        <div class="col-lg-3 col-sm-6"> 
+          <img src="pics/player2.png" alt="" width="100" height="100" id="img-player2">
+          <p id="showNamePlayer2">Player 2</p>
+          <p id="currentWeaponP2"></p>
+            <div class="showPlayer2">
+                <button type="button" class="btn btn-secondary btn-sm" id="player2Att">Attaquer</button>
+                <button type="button" class="btn btn-warning btn-sm" id="player2Def">Se défendre</button>  
+            </div>
+            <div class="progress">
+                <div class="progress-bar" id="pb-player2" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">100</div>
+            </div> 
+          </div>    
+      </div>
+    </div>  
+
+  	<!-- <footer>
+      <div>
+        <p>Ce site a été réalisé par Wei Chiron dans le cadre du parcours Développeur d’applications Frontend d’OpenClassrooms.</p>
+      </div>
+    </footer> -->
+<!-- script setup jQuery before bootstrap -->
+    <script 
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- <script src="script.js"></script>  -->
+    <script src="p1-game-initiation.js"></script> 
+    <script src="p2-movements.js"></script> 
+    <script src="p3-battle.js"></script> 
+
+  </body>
+</html>
